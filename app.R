@@ -1,5 +1,7 @@
 library(shiny)
 library(googlesheets4)
+library(httr)    
+httr::set_config(httr::config(http_version = 0))
 options(shiny.host = "0.0.0.0")
 options(shiny.port = 5000)
 
